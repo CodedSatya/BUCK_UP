@@ -18,7 +18,6 @@ body {
     background: linear-gradient(to right, #080c11, #141E30);
     color: white;
 }
-
 .container {
     display: flex;
     flex-direction: column;
@@ -216,13 +215,14 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    z-index: 999;
+    z-index: 99;
+    filter: brightness(200%) contrast(105%) drop-shadow(0 0 25px rgb(22, 45, 61));
 }
 
 
 .login{
     /* display: none; */
-    background-color: rgba(1, 1, 39, 0.911);
+    background-color: rgba(11, 11, 34, 0.925);
     height: 500px;
     width: 400px;
     border-radius:20px ;
@@ -266,16 +266,52 @@ nav {
     gap: 45px;
 }
 
+
+.ball{ 
+    background: linear-gradient(to right, #2280b656, #8c05e654);
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    transform: translate(-10%,-40%) rotate(45deg);
+    filter: blur(1.5em) brightness(150%) saturate(2);
+    z-index: 1;
+}
+.ball2{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 95%;
+    left: 90%;
+    transform: translate(-10%,-40%) rotate(-65deg);
+}
+.ball3{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 19%;
+    left: 90%;
+    transform: translate(-10%,-40%) rotate(-165deg);
+    z-index: 2;
+}
+
+
 .pop_up_content p{
     width: 300px;
     text-align: center;
 }
 
 .out_focus{
-    filter: blur(6px);
+    filter: blur(6px) brightness(20%);
     display: block;
     overflow: hidden;
 }
+
+
+
+
 
 
 
